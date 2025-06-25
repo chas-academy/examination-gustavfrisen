@@ -34,11 +34,9 @@ int main() {
 
     avgTotal = avgTotal / 5;
 
-    //printf("Student with highest average: %s", students[maxAvg].name);
     students[maxAvg].name[0] = toupper(students[maxAvg].name[0]);
     printf("%s\n", students[maxAvg].name);
 
-    //printf("Students with lower average than total average: \n");
     for (int i = 0; i < 5; i++) {
         if (students[i].avg < avgTotal) {
             students[i].name[0] = toupper(students[i].name[0]);
